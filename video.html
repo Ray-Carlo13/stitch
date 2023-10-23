@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>This is My Portfolio</h1>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li><!--
+         --><li><a href="profile.html">Profile</a></li><!--
+         --><li><a href="pictures.html">Picture</a></li><!--
+         --><li><a href="video.html" class="current">Video</a></li><!--
+         --><li><a href="news.html">News</a></li>
+        </ul>
+    </div>
+<div class="content">
+    <h3>Videos</h3>
+    <div class="container">
+        <video src="media/vid1.mp4" class="slider" autoplay loop muted></video>
+
+        <ul>
+            <li onclick="videoslider('media/vid1.mp4')"><video src="media/vid1.mp4"></video></li>
+            <li onclick="videoslider('media/vid2.mp4')"><video src="media/vid2.mp4"></video></li>
+            <li onclick="videoslider('media/vid3.mp4')"><video src="media/vid3.mp4"></video></li>
+            <li onclick="videoslider('media/vid4.mp4')"><video src="media/vid3.mp4"></video></li>
+        </ul>
+    </div>
+</div>
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>
